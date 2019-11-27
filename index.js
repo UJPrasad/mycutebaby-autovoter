@@ -2,7 +2,8 @@ const puppeteer = require("puppeteer");
 const BABYLINK = "https://mycutebaby.in/contest/participant/?n=5dc060abd363e&utm_source=wsapp_share&utm_campaign=November_2019&utm_medium=shared&utm_term=wsapp_shared_5dc060abd363e&utm_content=participant";
 
 const voteForMe = async () => {
-  const browser = await puppeteer.launch({headless: false});
+  const browser = await puppeteer.launch({headless: false}); // to run with chrome browser open
+  // const browser = await puppeteer.launch(); // to run as daemon
   const page = await browser.newPage();
 
   await page.goto(BABYLINK);
