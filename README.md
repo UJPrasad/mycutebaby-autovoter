@@ -19,6 +19,12 @@ After Installing NPM and Node.js
 > run 
 
 ```
+npm i
+```
+
+To download dependencies.  `It will also download  chromium browser which is about 140MB depending on your OS.` Then run.
+
+```
 npm start
 ```
 
@@ -26,6 +32,16 @@ npm start
 
 * It will automatically vote for your baby for every 30 minutes
 
+
+### To Run as Daemon
+
+* Comment out 
+
+> line 5
+
+* Uncomment 
+
+> Line 6
 
 ### Cutomizations
 
